@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3A3A3A;
+    --button-color: #E02C6D;
+}
+
+.font-family {
+    color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 83%;
+    max-width: 1200px;
+    /* border: 2px solid red; */
+    margin: 5rem auto;
+}
+
+.navbar {
+    /* border: 2px solid red; */
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.hero-logo h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2.125rem;
+    list-style: none;
+}
+
+.navbar ul li a {
+    font-weight: 600;
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+    /* border: 2px solid red; */
+}
+
+.hero-content-txt {
+    width: 50%;
+    /* border: 2px solid black; */
+    max-width: 584px;
+}
+
+.learge-header {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content-txt p {
+    font-size: 1rem;
+    color: var(--dark-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: var(--button-color);
+    padding: 10px 24px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font: 1rem;
+    cursor: pointer;
+}
+
+.hero-img img {
+    /* border: 2px solid black; */
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+
+.sponsor {
+    margin: 100px auto;
+}
+
+.sponsor-logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .hero-content-txt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .learge-header {
+        font-size: 1.75rem;
+        line-height: 2.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .sponsor {
+        margin: 50px auto;
+    }
+
+    .sponsor-logo {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
